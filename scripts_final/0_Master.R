@@ -1,6 +1,8 @@
 ### Master file ###
 # Bachelor thesis scripts by Noah Badenhoop
 
+# Download data here: https://drive.google.com/file/d/1Ubsaommh_jIkzmoWuFi5BSG6qqKLfhoC/view?usp=sharing
+
 library(pacman)
 packages <- c(
   "tidyverse", "rollama", "arrow", "furrr", "progressr", "purrr", "rvest", "xml2", "dplyr", 
