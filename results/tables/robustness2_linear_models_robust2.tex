@@ -1,0 +1,42 @@
+
+\begingroup
+\centering
+\begin{tabular}{lcc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{2}{c}{Numeric sentiment score (0-10)}\\
+   Model:                                & (1)            & (2)\\  
+   \midrule
+   \emph{Variables}\\
+   Constant                              & 5.011$^{***}$  & 8.707$^{**}$\\   
+                                         & (0.1018)       & (3.324)\\   
+   Newspaper: Zeit (ref. Welt)           & -0.1595        & -0.1759\\   
+                                         & (0.2731)       & (0.2740)\\   
+   Government: Scholz (ref. Merkel)      & -1.023$^{***}$ & -0.9690$^{***}$\\   
+                                         & (0.1161)       & (0.2057)\\   
+   Interaction: Zeit x Scholz            & 0.0881         & 0.1160\\   
+                                         & (0.3274)       & (0.3276)\\   
+   Yearly inflation                      &                & -0.0284\\   
+                                         &                & (0.0673)\\   
+   Unemployment rate                     &                & -0.6552\\   
+                                         &                & (0.5580)\\   
+   Quarterly GDP change (price adjusted) &                & -0.0797$^{*}$\\   
+                                         &                & (0.0368)\\   
+   Monthly Inflation Change              &                & -0.1495\\   
+                                         &                & (0.1013)\\   
+   Yearly GDP change (price adjusted)    &                & 0.0789$^{**}$\\   
+                                         &                & (0.0266)\\   
+   Yearly Change of unemployment rate    &                & 0.2797\\   
+                                         &                & (0.2665)\\   
+   \midrule
+   \emph{Fit statistics}\\
+   Standard-Errors & \multicolumn{2}{c}{Heteroskedasticity-robust} \\ 
+   Observations                          & 1,118          & 1,118\\  
+   R$^2$                                 & 0.06941        & 0.08635\\  
+   Adjusted R$^2$                        & 0.06691        & 0.07892\\  
+   \midrule \midrule
+   \multicolumn{3}{l}{\emph{Heteroskedasticity-robust standard-errors in parentheses}}\\
+   \multicolumn{3}{l}{\emph{Signif. Codes: ***: 0.001, **: 0.01, *: 0.05, .: 0.1}}\\
+\end{tabular}
+\par\endgroup
+
+
