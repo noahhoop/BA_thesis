@@ -39,7 +39,6 @@ library(future.apply)
 library(knitr)
 library(ggfortify)
 library(jtools)
-library(khb)
 
 
 options(scipen = 999)
