@@ -39,6 +39,7 @@ library(future.apply)
 library(knitr)
 library(ggfortify)
 library(jtools)
+library(khb)
 
 
 options(scipen = 999)
@@ -528,8 +529,8 @@ all_possible_models <- function(i) {
                      type = "response")
   
   # Extract the coefficient and p-value for both 'zeit' and 'welt'
-  zeit <- summary(tame)[2, c(4, 7)]  # Coefficient and p-value for 'zeit'
-  welt <- summary(tame)[1, c(4, 7)]  # Coefficient and p-value for 'welt'
+  zeit <- tame[2, c(4, 7)]  # Coefficient and p-value for 'zeit'
+  welt <- tame[1, c(4, 7)]  # Coefficient and p-value for 'welt'
   
   both <- data.frame(estimate_welt = numeric(), pvalue_welt = numeric(),
                      estimate_zeit = numeric(), pvalue_zeit = numeric())
@@ -890,8 +891,8 @@ all_possible_models_p <- function(i) {
                      type = "response")
   
   # Extract the coefficient and p-value for both 'zeit' and 'welt'
-  zeit <- summary(tame)[2, c(4, 7)]  # Coefficient and p-value for 'zeit'
-  welt <- summary(tame)[1, c(4, 7)]  # Coefficient and p-value for 'welt'
+  zeit <- tame[2, c(4, 7)]  # Coefficient and p-value for 'zeit'
+  welt <- tame[1, c(4, 7)]  # Coefficient and p-value for 'welt'
   
   both <- data.frame(estimate_welt = numeric(), pvalue_welt = numeric(),
                      estimate_zeit = numeric(), pvalue_zeit = numeric())
@@ -1075,8 +1076,8 @@ all_possible_models_robust1 <- function(i) {
                      type = "response")
   
   # Extract the coefficient and p-value for both 'zeit' and 'welt'
-  zeit <- summary(tame)[2, c(4, 7)]  # Coefficient and p-value for 'zeit'
-  welt <- summary(tame)[1, c(4, 7)]  # Coefficient and p-value for 'welt'
+  zeit <- tame[2, c(4, 7)]  # Coefficient and p-value for 'zeit'
+  welt <- tame[1, c(4, 7)]  # Coefficient and p-value for 'welt'
   
   both <- data.frame(estimate_welt = numeric(), pvalue_welt = numeric(),
                      estimate_zeit = numeric(), pvalue_zeit = numeric())
@@ -1398,8 +1399,8 @@ all_possible_models_robust1_p <- function(i) {
                      type = "response")
   
   # Extract the coefficient and p-value for both 'zeit' and 'welt'
-  zeit <- summary(tame)[2, c(4, 7)]  # Coefficient and p-value for 'zeit'
-  welt <- summary(tame)[1, c(4, 7)]  # Coefficient and p-value for 'welt'
+  zeit <- tame[2, c(4, 7)]  # Coefficient and p-value for 'zeit'
+  welt <- tame[1, c(4, 7)]  # Coefficient and p-value for 'welt'
   
   both <- data.frame(estimate_welt = numeric(), pvalue_welt = numeric(),
                      estimate_zeit = numeric(), pvalue_zeit = numeric())
@@ -1574,8 +1575,8 @@ all_possible_models_robust2 <- function(i) {
                      type = "response")
   
   # Extract the coefficient and p-value for both 'zeit' and 'welt'
-  zeit <- summary(tame)[2, c(4, 7)]  # Coefficient and p-value for 'zeit'
-  welt <- summary(tame)[1, c(4, 7)]  # Coefficient and p-value for 'welt'
+  zeit <- tame[2, c(4, 7)]  # Coefficient and p-value for 'zeit'
+  welt <- tame[1, c(4, 7)]  # Coefficient and p-value for 'welt'
   
   both <- data.frame(estimate_welt = numeric(), pvalue_welt = numeric(),
                      estimate_zeit = numeric(), pvalue_zeit = numeric())
@@ -1902,8 +1903,8 @@ all_possible_models_robust2_p <- function(i) {
                      type = "response")
   
   # Extract the coefficient and p-value for both 'zeit' and 'welt'
-  zeit <- summary(tame)[2, c(4, 7)]  # Coefficient and p-value for 'zeit'
-  welt <- summary(tame)[1, c(4, 7)]  # Coefficient and p-value for 'welt'
+  zeit <- tame[2, c(4, 7)]  # Coefficient and p-value for 'zeit'
+  welt <- tame[1, c(4, 7)]  # Coefficient and p-value for 'welt'
   
   both <- data.frame(estimate_welt = numeric(), pvalue_welt = numeric(),
                      estimate_zeit = numeric(), pvalue_zeit = numeric())
@@ -2082,8 +2083,8 @@ all_possible_models_robust3 <- function(i) {
                      type = "response")
   
   # Extract the coefficient and p-value for both 'zeit' and 'welt'
-  zeit <- summary(tame)[2, c(4, 7)]  # Coefficient and p-value for 'zeit'
-  welt <- summary(tame)[1, c(4, 7)]  # Coefficient and p-value for 'welt'
+  zeit <- tame[2, c(4, 7)]  # Coefficient and p-value for 'zeit'
+  welt <- tame[1, c(4, 7)]  # Coefficient and p-value for 'welt'
   
   both <- data.frame(estimate_welt = numeric(), pvalue_welt = numeric(),
                      estimate_zeit = numeric(), pvalue_zeit = numeric())
@@ -2423,8 +2424,8 @@ all_possible_models_robust3_p <- function(i) {
                      type = "response")
   
   # Extract the coefficient and p-value for both 'zeit' and 'welt'
-  zeit <- summary(tame)[2, c(4, 7)]  # Coefficient and p-value for 'zeit'
-  welt <- summary(tame)[1, c(4, 7)]  # Coefficient and p-value for 'welt'
+  zeit <- tame[2, c(4, 7)]  # Coefficient and p-value for 'zeit'
+  welt <- tame[1, c(4, 7)]  # Coefficient and p-value for 'welt'
   
   both <- data.frame(estimate_welt = numeric(), pvalue_welt = numeric(),
                      estimate_zeit = numeric(), pvalue_zeit = numeric())
