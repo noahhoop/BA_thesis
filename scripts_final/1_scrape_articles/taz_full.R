@@ -189,4 +189,4 @@ taz_full <- taz_full |>
 # Also cleaning titles:
 taz_full <- taz_full |> mutate(title = str_remove(title, " - taz.de$"))
 
-write.csv(taz_full, "taz_full.csv")
+write.csv(taz_full, "data/taz.csv")

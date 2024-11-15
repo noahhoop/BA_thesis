@@ -12,7 +12,7 @@ sitemaps <-
   read_html() |> 
   html_elements("loc") |> 
   html_text2() |> 
-  str_subset("(?<=index-)(202[3-4]|201[7-9])")
+  str_subset("(?<=index-)(202[0-4]|201[7-9])")
 
 find_articles <- function(sitemap) {
   sitemap |> 
@@ -138,4 +138,4 @@ articles <- future_map(article_urls, scrape_safely, .progress = TRUE)
 articles2 <- keep(articles, is_tibble)
 bild <- articles2 |> list_rbind()
 
-bild |> readr::write_csv("data/bild2.csv")
+bild |> readr::write_csv("data/bild_full.csv")
