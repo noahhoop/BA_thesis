@@ -178,6 +178,6 @@ sz <- sueddeutsche |>
   bind_rows() %>% 
   filter(body != "")
 
-write_csv(sz, "data/sz3.csv")
+write_csv(sz, "data/sz2.csv")
 
-#t <- read.csv("data/data/sz2.csv")
+

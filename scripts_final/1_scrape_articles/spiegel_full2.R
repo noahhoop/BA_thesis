@@ -1,4 +1,4 @@
-# Scraping all Spiegel Online articles from 01/2020 to 12/2022. 
+# Scraping Spiegel Online articles
 
 library(rvest)
 library(xml2)

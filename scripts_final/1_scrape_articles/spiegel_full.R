@@ -141,4 +141,4 @@ spiegel |>
       body
     )
   ) |> 
-  write.csv("spiegel.csv")
+  write.csv("data/spiegel.csv")

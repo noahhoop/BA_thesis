@@ -194,6 +194,6 @@ taz_full2 <- taz_full |>
 # Also cleaning titles:
 taz_full2 <- taz_full2 |> mutate(title = str_remove(title, " - taz.de$"))
 
-write.csv(taz_full2, "data/taz_full2.csv")
+write.csv(taz_full2, "data/taz2.csv")
 
-save(taz_full2, file = "data/taz_full2.RData")
+#save(taz_full2, file = "data/taz_full2.RData")

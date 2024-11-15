@@ -11,7 +11,7 @@ library(progressr)
 
 # Retrieve sitemaps:
 url <- "https://www.welt.de/sitemaps/sitemap/sitemap.xml"
-patterns <- "2017|2018|2019|2023|2024"
+patterns <- "2017|2018|2019|2020|2021|2022|2023|2024"
 
 # the url contains a list of download links for compressed folders holding the
 # actual sitemaps. Thus, we need to first download & unzip the archives:
@@ -249,5 +249,5 @@ welt_df <- welt |>
   bind_rows() |>
   tibble()
 
-write.csv(welt_df, "data/welt2.csv")
-save(welt_df, file = "data/welt2.RData")
+write.csv(welt_df, "data/welt_full.csv")
+#save(welt_df, file = "data/welt2.RData")

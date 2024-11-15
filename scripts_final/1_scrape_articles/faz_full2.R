@@ -187,7 +187,7 @@ with_progress({
 
 
 faz2 <- tibble(do.call(rbind, faz_full))
-write_csv(faz2, "data/faz_full2.csv")
+write_csv(faz2, "data/faz2.csv")
 
 
 

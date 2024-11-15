@@ -10,7 +10,7 @@ library(stringr)
 library(progressr)
 
 url <- "https://www.zeit.de/gsitemaps/index.xml"
-patterns <- "2017|2018|2019|2023|2024"
+patterns <- "2020|2021|2022"
 
 sitemaps <- url |> 
   httr::GET() |> 
@@ -151,4 +151,4 @@ with_progress({
 })
 
 zeit_full <- tibble(do.call(rbind, zeit_full))
-write.csv(zeit_full, "data/zeit_full2.csv")
+write.csv(zeit_full, "data/zeit.csv")
