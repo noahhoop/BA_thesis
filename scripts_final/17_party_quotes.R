@@ -4,22 +4,18 @@
 # author: Noah Badenhoop
 ###
 
-library(tidyverse)
-library(readr)
-library(caret)
-library(xtable)
-library(knitr)
-library(corrr)
-library(deeplr)
-library(httr)
-library(psych)
-library(modelsummary)
-library(sjPlot)
-library(irr)
-library(ggeffects)
-library(marginaleffects)
-options(scipen = 999)
+# If you have trouble loading some of the packages make sure to update your installed packages, especially tidyverse
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(
+  tidyverse, rio, fixest, Hmisc, scales, plm, pglm, labelled, modelsummary, 
+  flextable, texreg, stargazer, sandwich, lmtest, xtable, estimatr, 
+  marginaleffects, ggeffects, margins, car, corrr, emmeans, miceadds, 
+  sjPlot, haven, foreign, boot, nortest, imputeTS, future.apply, knitr, 
+  ggfortify, jtools, readr, caret, deeplr, httr, psych, irr
+)
 
+options(scipen = 999)
+rm(list=ls())
 
 welt_hex <- "#003a5a"
 zeit_hex <- "#b91109"

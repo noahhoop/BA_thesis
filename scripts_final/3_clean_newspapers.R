@@ -67,9 +67,9 @@ all2 <- all2 %>%
 
 save(all2, file = "data/final/full_2.RData")
 
-write_csv(all2, "data/final/full_2.csv")
+# write_csv(all2, "data/final/full_2.csv")
 
-load("data/final/full_2.RData")
+# load("data/final/full_2.RData")
 set.seed(48913)
 s <- sample(1:nrow(all2), 600)
 save(s, file = "data/final/sample600.RData")

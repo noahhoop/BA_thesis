@@ -5,41 +5,16 @@
 ###
 # packages ----------------------------------------------------------------
 
-
-library(tidyverse)
-library(rio)
-library(fixest)
-library(Hmisc)
-library(scales)
-library(plm)
-library(pglm)
-library(labelled)
-library(modelsummary)
-library(flextable)
-library(texreg)
-library(stargazer)
-library(sandwich)
-library(lmtest)
-library(xtable)
-library(estimatr)
-library(marginaleffects)
-library(ggeffects)
-library(margins)
-library(car)
-library(corrr)
-library(emmeans)
-library(miceadds)
-library(sjPlot)
-library(haven)
-library(foreign)
-library(boot)
-library(nortest)
-library(imputeTS)
-library(future.apply)
-library(knitr)
-library(ggfortify)
-library(jtools)
-
+# If you have trouble loading some of the packages make sure to update your installed packages, especially tidyverse
+# and ggeffects as one function is only in the newer versions
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(
+  tidyverse, rio, fixest, Hmisc, scales, plm, pglm, labelled, modelsummary, 
+  flextable, texreg, stargazer, sandwich, lmtest, xtable, estimatr, 
+  marginaleffects, ggeffects, margins, car, corrr, emmeans, miceadds, 
+  sjPlot, haven, foreign, boot, nortest, imputeTS, future.apply, knitr, 
+  ggfortify, jtools
+)
 
 options(scipen = 999)
 rm(list=ls())

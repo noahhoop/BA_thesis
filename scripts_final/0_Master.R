@@ -1,9 +1,10 @@
 ### Master file ###
 # Bachelor thesis scripts by Noah Badenhoop
 
-# Download data here: https://drive.google.com/file/d/1Ubsaommh_jIkzmoWuFi5BSG6qqKLfhoC/view?usp=sharing
+# Download only analysis data here (scripts 12, 13, 17): https://drive.google.com/file/d/1xla26n4H3VtglMcmasxV3UcDI4kAjDlt/view?usp=drive_link
 
-library(pacman)
+# If you have trouble loading some of the packages make sure to update your installed packages, especially tidyverse
+if (!require("pacman")) install.packages("pacman")
 packages <- c(
   "tidyverse", "rollama", "arrow", "furrr", "progressr", "purrr", "rvest", "xml2", "dplyr", 
   "tidyr", "stringr", "readr", "httr", "openai", "jsonlite", "caret", "xtable", "irr", 
@@ -14,7 +15,7 @@ packages <- c(
   "future.apply", "ggfortify", "jtools"
 )
 
-p_load(char = packages)
+pacman::p_load(char = packages)
 
 # 1. Webscraping ----------------------------------------------------------
 

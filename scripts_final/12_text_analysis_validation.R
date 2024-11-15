@@ -3,13 +3,10 @@
 # description: Validation of text analysis
 ###
 
-library(tidyverse)
-library(caret)
-library(xtable)
-library(irr)
-library(psych)
-
-
+# If you have trouble loading some of the packages make sure to update your installed packages, especially tidyverse
+if (!require("pacman")) install.packages("pacman")
+packages <- c("tidyverse", "caret", "xtable", "irr", "psych")
+pacman::p_load(char = packages)
 
 # Filter sample validation: ChatGPT ---------------------------------------
 
