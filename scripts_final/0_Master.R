@@ -1,7 +1,7 @@
 ### Master file ###
 # Bachelor thesis scripts by Noah Badenhoop
 
-# Download only analysis data here (scripts 12, 13, 17): https://drive.google.com/file/d/1xla26n4H3VtglMcmasxV3UcDI4kAjDlt/view?usp=drive_link
+# Download only analysis data here (scripts 12, 13, 17): https://drive.google.com/file/d/10mKJ0XYfmFDugCYDLOMoR6V2Jl3Ku5P2/view?usp=sharing
 
 # If you have trouble loading some of the packages make sure to update your installed packages, especially tidyverse
 if (!require("pacman")) install.packages("pacman")
